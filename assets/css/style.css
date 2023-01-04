@@ -114,9 +114,81 @@ img {
 /* Global styling End here */
 
 /* ==========================================================================
-  1.to do list styling start here
+  1.Drink water styling start here
 ========================================================================== */
+body { background-color: #298fe9; }
+.wrapper {
+  max-width: 1366px;
+  width: 35% ;
+  margin:0 auto;
+}
 
+h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+span {
+  color : #fff;
+  text-align: center;
+  display: block;
+}
+
+.instruction { margin-top: 30px; }
+
+.water-jar {
+  background-color: #fff;
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 300px;
+  border: 5px solid #206fd6;
+  border-radius: 0 0 60px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.water-jars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: 30px auto 0;
+}
+
+.jar-list {
+  flex-basis: 19%;
+  background-color: #fff;
+  padding: 30px 5px;
+  text-align: center;
+  border: 3px solid #206fd6;
+  border-radius: 0 0 60px 60px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.fill {
+  position: absolute;
+  display: block;
+  background-color: #298fe9;
+  color: #040e1f;
+  font-size: 30px;
+  width: 100%;
+  bottom: -105%; 
+  min-height: 300px;
+  z-index: 1;
+  padding: 30px 0;
+  transition: all .5s ease-in-out;
+}
+
+.demand,
+.capacity { color: #206fd6; }
+.jar-list:not(:nth-child(4n)) { margin-right: 8%; }
+.jar-list a { color: #298fe9; }
+.jar-list.active { background-color: #7aaedb; }
+.jar-list a.active { color: #fff; }
 /* ==========================================================================
-1.to do list styling End here
+1.Drink water styling End here
 ========================================================================== */
